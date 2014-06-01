@@ -1,4 +1,4 @@
-object Test {
+object Problem1 {
   def multi0f35(x: Int): BigInt =
     List.range(0, x).par.aggregate(0)((t, y) => (if (y % 3 == 0 || y % 5 == 0) t + y else t), _ + _); //filter(y=>y%3==0 || y%5==0).sum;
   

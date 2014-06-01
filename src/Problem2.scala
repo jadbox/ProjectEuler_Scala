@@ -1,5 +1,5 @@
 import annotation.tailrec
-object Test2 {
+object Problem2 {
   //def fib(i: BigInt, j: BigInt) = 
 	//	Iterator.iterate((i,j)){ case (a,b) => (b,a+b) }.map(_._1)
   def fibFrom(a: BigInt, b: BigInt): Stream[BigInt] = a #:: fibFrom(b, 
